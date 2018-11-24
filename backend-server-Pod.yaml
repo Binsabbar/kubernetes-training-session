@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: arithmetic-operations-app #unique
+  labels:
+    app: backend # not unique
+spec:
+  containers:
+    - name: arithmetic-operations-app
+      image: backend-app:1
+      ports:
+        - containerPort: 8080

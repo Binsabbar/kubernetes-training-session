@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rest-api-app  
+  labels:
+    app: rest-api-app
+spec:
+  containers:
+    - name: rest-api-app
+      image: api-app:1
+      env:
+        - name: BACK_END_IP
+          value: backend #the name of our service
+          # value: IP_OF_POD # the IP of the pod
+      ports:
+        - containerPort: 8080
