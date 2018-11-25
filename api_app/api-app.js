@@ -3,8 +3,8 @@
 const express = require('express');
 const request = require('request');
 try {
-  const costumGreeting = require("./custom_greeting.js");
-  console.log(costumGreeting.Greeting);
+  const costumGreeting = require("./custom_scripts/custom_greeting.js");
+  costumGreeting.Greeting();
 }
 catch (e) {
     console.log("custom_greeting.js module is not configured");
