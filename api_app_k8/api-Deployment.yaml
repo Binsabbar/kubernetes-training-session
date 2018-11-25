@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: rest-api-app
+          # image: api-app:2 new release
           image: api-app:1
           env:
             - name: BACK_END_IP
