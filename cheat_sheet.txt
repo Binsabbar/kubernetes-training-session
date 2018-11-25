@@ -1,0 +1,12 @@
+Get services:
+kubectl get services -o wide
+
+Get Pods:
+kubectl get pods -o wide
+
+apply all yaml files in dir:
+for f in **/*.yaml; do kubectl apply -f $f; done
+
+
+delte all yaml files in dir:
+for f in **/*.yaml; do kubectl delete -f $f; done
