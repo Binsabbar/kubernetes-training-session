@@ -10,3 +10,11 @@ for f in **/*.yaml; do kubectl apply -f $f; done
 
 delte all yaml files in dir:
 for f in **/*.yaml; do kubectl delete -f $f; done
+
+
+setup nginx:
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/mandatory.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/provider/cloud-generic.yaml
+
+curl ingress with host name:
+curl localhost/api/add/1/2 -H 'Host: api-app.com'
