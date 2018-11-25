@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rest-api-app
+  labels:
+    app: rest-api-app
+data:
+  custom_greeting.js: |-
+    function Greeting() { 
+      console.log('Hello, this is rest api app\n' + 'This is from ConfigMap') 
+    }
+    module.exports.Greeting = Greeting;
+  BACK_END_IP: backend
+  
+  
