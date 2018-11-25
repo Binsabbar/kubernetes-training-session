@@ -5,13 +5,12 @@ metadata:
   labels:
     app: rest-api-app
 spec:
-  replicas: 5
+  replicas: 2
   selector: # how to find which pod to manage
     matchLabels:
       app: rest-api-app
-  template:
+  template: # it is a Pod object
     metadata:
-      name: rest-api-app
       labels:
         app: rest-api-app
     spec:
