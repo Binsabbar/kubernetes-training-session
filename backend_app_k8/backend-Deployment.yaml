@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: arithmetic-operations
+  labels:
+    app: backend 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template: 
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: arithmetic-operations-app
+          image: backend-app:1
+          ports:
+            - containerPort: 8080
