@@ -13,7 +13,7 @@ catch (e) {
 // Constants
 const PORT = 8080;
 const HOST = '0.0.0.0';
-const BACK_END_IP = process.env.BACK_END_IP
+const BACK_END_IP = process.env.BACKEND_IP
 const BACK_END_PORT = 8080
 
 // App
