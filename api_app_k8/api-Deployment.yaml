@@ -16,10 +16,9 @@ spec:
     spec:
       containers:
         - name: rest-api-app
-          # image: api-app:2 # same as initial image - demo rollout
-          image: api-app:ac74027 # initial image with no config
+          image: binsabbar/k8s-training-api-app:1
           env:
-            - name: BACK_END_IP
+            - name: BACKEND_IP
               value: backend
           ports:
             - containerPort: 8080
@@ -50,9 +49,9 @@ spec:
 #                 path: custom_greeting.js
 #       containers:
 #         - name: rest-api-app
-#           image: api-app:9278fb7
+#           image: binsabbar/k8s-training-api-app:1
 #           env:
-#             - name: BACK_END_IP
+#             - name: BACKEND_IP
 #               valueFrom:
 #                 configMapKeyRef:
 #                   name: rest-api-app
