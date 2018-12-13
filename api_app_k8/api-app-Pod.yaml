@@ -7,10 +7,10 @@ metadata:
 spec:
   containers:
     - name: rest-api-app
-      image: api-app:1
+      image: binsabbar/k8s-training-api-app:1
       env:
-        - name: BACK_END_IP
-          value: backend #the name of our service
-          # value: IP_OF_POD # the IP of the pod
+        - name: BACKEND_IP
+          # value: backend #the name of our service
+          value: IP_OF_POD # the IP of the pod
       ports:
         - containerPort: 8080
