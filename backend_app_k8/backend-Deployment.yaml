@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: arithmetic-operations-app
-          image: backend-app:1
+          image: binsabbar/k8s-training-backend-app:1
           ports:
             - containerPort: 8080
