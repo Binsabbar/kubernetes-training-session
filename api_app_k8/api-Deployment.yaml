@@ -55,7 +55,7 @@ spec:
 #               valueFrom:
 #                 configMapKeyRef:
 #                   name: rest-api-app
-#                   key: BACK_END_IP
+#                   key: BACKEND_IP
 #           ports:
 #             - containerPort: 8080
 #           volumeMounts:

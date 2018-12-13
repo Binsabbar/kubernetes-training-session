@@ -10,6 +10,6 @@ data:
       console.log('Hello, this is rest api app\n' + 'This is from ConfigMap') 
     }
     module.exports.Greeting = Greeting;
-  BACK_END_IP: backend
+  BACKEND_IP: backend
   
   
